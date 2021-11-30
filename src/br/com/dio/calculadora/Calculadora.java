@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Calculadora {
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in); 
+		Scanner scan = new Scanner(System.in); {
 		
 		int a, b;
 		
@@ -18,7 +18,7 @@ public class Calculadora {
 		int soma = soma(a,b);
 		int subtracao = subtracao(a,b);
 		int multiplicacao = multiplicacao(a,b);
-		int divisao = divisao(a,b);
+		double divisao = divisao(a,b);
 		
 		
 		
@@ -26,6 +26,7 @@ public class Calculadora {
 		System.out.println("sub " + subtracao);
 		System.out.println("multi " + multiplicacao);
 		System.out.println("div " + divisao);
+		}
 		
 	
 	}
@@ -38,7 +39,7 @@ public class Calculadora {
 		return a - b;
 	}
 	
-	public static int divisao(int a,int b) {
+	public static double divisao(double a,double b) {
 		return a / b;
 	}
 	
